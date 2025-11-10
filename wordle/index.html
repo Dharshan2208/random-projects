@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <style>
+      #game-container {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      #input-area {
+        margin: 20px 0;
+      }
+      #guess-input {
+        padding: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        width: 150px;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+      #guess-button {
+        padding: 8px 16px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .attempt {
+        margin: 10px 0;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+      .attempt-number {
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div id="game-container">
+      <h1>Wordle Game</h1>
+      <div id="message-area"></div>
+      <div id="input-area">
+        <input
+          type="text"
+          id="guess-input"
+          maxlength="5"
+          placeholder="Write here"
+        />
+        <button id="guess-button">Guess</button>
+      </div>
+      <div id="feedback-area"></div>
+    </div>
+  </body>
+</html>

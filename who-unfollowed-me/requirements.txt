@@ -1,0 +1,4 @@
+requests
+smtplib
+sqlite3
+python-dotenv
